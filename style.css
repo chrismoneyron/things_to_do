@@ -1,0 +1,135 @@
+body {
+	background: url("travel_background.jpg") no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+body:before {
+	content: "";
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 66, 128, 0.5);
+	z-index: -1;
+}
+
+h1 {
+	font-family: 'Poiret One';
+	font-size: 48px;
+	margin-right: 40px;
+	padding: 10px;
+}
+
+table {
+	border: 4px solid white;
+	border-collapse: collapse;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 10px #202020;
+}
+
+th, tr, td {
+	border: 2px solid white;
+}
+
+th, tr, td, form {
+	color: white;
+	font-size: 18px;
+	text-shadow: 2px 2px 1px #004280;
+}
+
+input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 6px;
+	font-size: 14px;
+	padding: 7px;
+}
+
+input:focus {
+	box-shadow: 2px 2px white, 1px 1px 4px #004280;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltip_text {
+	visibility: hidden;
+	width: 100px;
+	background-color: rgb(50, 50, 50);
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 10px;
+	left: 105%;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.tooltip .tooltip_text::after {
+	content: "";
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent rgb(50, 50, 50) transparent transparent;
+}
+
+.tooltip:hover .tooltip_text {
+	visibility: visible;
+	opacity: 1;
+}
+
+button {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 12px 18px;
+	text-align: center;
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+	font-size: 14px;
+}
+
+button:hover {
+	background-color: white;
+	color: rgba(0, 64, 128, 0.8);
+	font-weight: bold;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+	background-color: #cce6ff;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #cce6ff;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background: -webkit-linear-gradient(#80c1ff, #1a90ff);
+}

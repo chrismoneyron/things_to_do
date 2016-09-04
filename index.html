@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src = "jquery-1.12.4.js"></script>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poiret+One&amp;effect=emboss">
+	<title>Things to Do!</title>
+</head>
+<body>
+	<h1 class = "font-effect-emboss" style = "color: #004280; border: 2px solid white; width: 525px;">Discover Fun Things to Do!</h1>
+	<form class = "inputs">
+		Location:<br>
+		<div class = "tooltip">
+			<input type = "text" id = "location">
+			<span class = "tooltip_text">Required</span>
+		</div>
+		<br>
+		Start Date:<br>
+		<div class = "tooltip">
+			<input type = "date" id = "start_date"><br>
+			<span class = "tooltip_text">Optional</span>
+		</div>
+		<br>
+		End Date:<br>
+		<div class = "tooltip">
+			<input type = "date" id = "end_date"><br>
+			<span class = "tooltip_text">Optional</span>
+		</div>
+	</form>
+	<button type = "button" onclick = "show_activities()">Submit</button>
+	<table class = "results" cellpadding = "30px"></table>
+	<script src = "show_activities.js"></script>
+</body>
+</html>
